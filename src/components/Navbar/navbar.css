@@ -1,0 +1,24 @@
+.NavBar{
+    display: flex;
+    border: 2px solid black;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.NavNombre{
+    color: white;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1rem;
+}
+
+.NavProductos{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style-type: none;
+    color: white;
+    font-size: 1.1rem;
+    
+}
