@@ -4,13 +4,13 @@ import { Link } from "react-router-dom";
 
 const Item = ({ product }) => {
   return (
-    <div>
-      <img
+    <div className="item">
+      <img className="itemImage"
         src={product.image}
       />
-      <div>
+      <div className="itemDetails">
         <p>{product.name}</p>
-        <Link to={`/detail/${product.id}`} className="button-item"> Ver detalles </Link>
+        <Link to={`/detail/${product.id}`} className="buttomDetails"> Ver detalles </Link>
       </div>
     </div>
   );
