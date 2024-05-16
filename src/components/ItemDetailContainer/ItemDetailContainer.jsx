@@ -17,7 +17,7 @@ const ItemDetailContainer = () => {
         console.error(error);
       })
       .finally(() => {
-        console.log("Finalo la promesa");
+        
       });
   }, [idProduct]);
 

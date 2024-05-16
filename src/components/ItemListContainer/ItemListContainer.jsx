@@ -25,7 +25,6 @@ const ItemListContainer = ({ saludo }) => {
         console.error(error);
       })
       .finally(() => {
-        console.log("Finalizo la promesa");
       });
   }, [idCategory]);
 
