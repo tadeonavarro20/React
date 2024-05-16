@@ -17,7 +17,6 @@ const ItemDetailContainer = () => {
         console.error(error);
       })
       .finally(() => {
-        
       });
   }, [idProduct]);
 
