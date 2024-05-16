@@ -1,17 +1,23 @@
-import NavBar from "./components/Navbar/NavBar"
-import ItemListContainer from "./components/ItemListContainer/ItemListContainer"
+import NavBar from "./components/Navbar/NavBar";
+import ItemListContainer from "./components/ItemListContainer/ItemListContainer";
+import ItemDetailContainer from "./components/ItemDetailContainer/ItemDetailContainer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-import './App.css'
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <ItemListContainer saludo = "Bienvenido a Trendy Threads tu tienda de ropa favorita"/>
+    <BrowserRouter>
+    <NavBar/>
 
-    </div>
-  )
+    <Routes>
+      <Route path="/" element={ <ItemListContainer saludo="Bienvenidos a Trendy Threads" /> } />
+      <Route path="/category/:idCategory" element={ <ItemListContainer saludo="Bienvenidos a Trendy Threads" /> } />
+      <Route path="/detail/:idProduct" element={<ItemDetailContainer />} />
+    </Routes>
+  </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
